@@ -4,7 +4,8 @@
 > 🛡️ Goal: Gain reverse shell & capture the flag  
 > 🚨 CVE used: CVE-2024-27198
 
-# RED exploit the server!
+# RED exploit the server! 
+# What is the content of flag.txt in the user's home folder?
 
 <Details>
 # 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
@@ -94,6 +95,14 @@ THM{redacted_for_policy}
 </Details>
 
 # BLUE lets investigate!
-
-# 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
+# What is the name of the backdoor user which was created on the server after exploitation?
+<Details>
+   
+# 1. First Step: Access the Web Application
+*Once the target machine is deployed, open your web browser and navigate to the following address:*
+```bash
+10.10.249.14:8000
+```
+1. "10.10.249.14" -> The target machine's IP address
+2. "8000" -> The port number
 
