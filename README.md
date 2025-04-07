@@ -1,3 +1,4 @@
+![Nmap Scan](Theme%20Brains.JPG)
 # brains-writeup-thm
 Write-up for TryHackMe room Brains
 
