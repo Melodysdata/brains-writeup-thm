@@ -81,7 +81,8 @@ cat flag.txt
 ```
 ![Nmap Scan](Brain%20Room%20flag.JPG)
 
-# For ethical and platform policy reasons, I cannot display the actual contents of the flag.txt file.
+# ✅ CONGRATULATIONS!!! Now we have the first FLAG
+# For ethical and platform policy reasons, I cannot display the actual contents of the flag.txt file
 *Instead, here is a simulated example of what the output would look like:*
 
 ```bash
