@@ -4,6 +4,8 @@
 > 🛡️ Goal: Gain reverse shell & capture the flag  
 > 🚨 CVE used: CVE-2024-27198
 
+<details>
+
 # RED exploit the server!
 # 1. First Step: run in the Terminal "nmap -p- <Target_IP_Address>"
 
