@@ -8,8 +8,8 @@ Write-up for TryHackMe room Brains
 > 🚨 CVE used: CVE-2024-27198
 
 # RED exploit the server!
+# 1. First Step in the Terminal "nmap -p- <Target_IP_Address>"
 
-1. First Step in the Terminal "nmap -p- <Target_IP_Address>"
 ```bash
 nmap -p- 10.10.252.192
 ````
