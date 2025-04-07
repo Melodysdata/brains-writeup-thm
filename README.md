@@ -7,7 +7,7 @@
 # RED exploit the server!
 
 <details>
-# 1. First Step: run in the Terminal "nmap -p- <Target_IP_Address>"
+# 1. First Step: run in the Terminal "nmap -p- <Target_IP_Address>
 
 ```bash
 nmap -p- 10.10.252.192
