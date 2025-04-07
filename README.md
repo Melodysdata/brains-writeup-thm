@@ -110,4 +110,4 @@ THM{redacted_for_policy}
 
 *In the left-hand panel, you can see a list of installed apps within Splunk; Click on Search & Reporting*
 
-![Nmap Scan](Brain%20Room%20flag.JPG)
+![Nmap Scan](Brain%20Web%20search.JPG)
