@@ -78,6 +78,5 @@ ls
 ```bash
 cat flag.txt
 ```
-![Nmap Scan](Brain%20Room%20flag.JPG)
 
 
