@@ -119,4 +119,4 @@ THM{redacted_for_policy}
 ```bash
 source="/var/log/auth.log" *new user* #Set Time Range to “All time”
 ```
-![Nmap Scan](Brain%20Room%20Web%20search.JPG)
+![Nmap Scan](Brain%20Room%F1.JPG)
