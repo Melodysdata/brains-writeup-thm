@@ -6,15 +6,16 @@
 
 # RED exploit the server!
 
-<details>
 # 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
 
 ```bash
 nmap -p- 10.10.252.192
 ````
+<Detailed Steps>
 1. "nmap" -> The network scanner tool
 2. "-p-"  -> Scans all ports (from 1 to 65535). By default, Nmap scans only the top 1000 most common ports.
 3. "<Target_IP_Address>" -> The IP address of the target — in the case of the Brains room
+</Detailed Steps>
    
 ![Nmap Scan](Brain%20Room%20Nmap%20scan.JPG)
 
