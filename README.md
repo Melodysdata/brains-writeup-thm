@@ -99,7 +99,7 @@ nmap -p- 10.10.252.192
 # 1. What is the name of the backdoor user which was created on the server after exploitation?
 <Details>
    
-# 1. First Step: Access the Web Application
+# First Step: Access the Web Application
    *Once the target machine is deployed, open your web browser and navigate to the following address:*
    ```bash
    10.10.249.14:8000
@@ -107,7 +107,7 @@ nmap -p- 10.10.252.192
    1. "10.10.249.14" -> The target machine's IP address
    2. "8000" -> The port number
    
-# 2. Second Step:  Access Search & Reporting
+# Second Step: Access Search & Reporting
    
    *In the left-hand panel, you can see a list of installed apps within Splunk; Click on Search & Reporting*
    
@@ -123,6 +123,51 @@ nmap -p- 10.10.252.192
    ![Nmap Scan](Brain%20Room%20F1.JPG)
 
    *Look specifically for an event that occurred on 7/4/24 in the logs*
-   # ✅ CONGRATULATIONS!!! The value in place of [NAME] is the flag answer to the challenge question*
+# ✅ CONGRATULATIONS!!! The value in place of [NAME] is the flag answer to the challenge question*
 
 </Details>
+
+# 2. What is the name of the malicious-looking package installed on the server?
+<Details>
+
+# Lets find the Malicious-Looking Package Installed on the Server
+  *we’ll search in Splunk’s logs for any package installation events*
+
+  ```bash
+  source="/var/log/dpkg.log" date_month="july" date_mday="4" *install*
+
+  # source="/var/log/dpkg.log" → This is the Debian package manager log, which records installed
+  # date_month="july" → We filter by the correct month.
+  # date_mday="4" → And the specific day of the event: April 7th, 2024 is interpreted as July 4 based on the system’s locale format in Splunk
+  # *install* → We're looking for any entries that contain the word install, which is part of the log line when a package is installed.
+  ```
+
+  *Why This Date? We know from previous investigation that the exploitation happened on 7/4/24*
+  *In the search results, you'll see lines like: install [PACKAGE-NAME] [version]*
+
+# ✅ CONGRATULATIONS!!! The [PACKAGE-NAME] that looks suspicious is our answer to the question
+
+</Details>
+
+# 3. What is the name of the plugin installed on the server after successful exploitation?
+<Details>
+
+# Identify the Plugin Installed After Exploitation
+ *we need to check TeamCity’s activity logs, which record changes in the system, including plugin uploads or installations.*
+
+ ```bash
+source="/opt/teamcity/TeamCity/logs/teamcity-activities.log" *plugin*
+
+# source="/opt/teamcity/TeamCity/logs/teamcity-activities.log" → This is the log file where TeamCity activity events (like plugin actions) are recorded.
+# *plugin* → We use a wildcard search to look for any lines that contain the word plugin, which likely appears during plugin installation.
+```
+
+# ✅ CONGRATULATIONS!!! Pro Tip: The plugin will appear in plain text, but when submitting the answer to the question, make sure to append .zip to the name
+
+</Details>
+
+
+
+
+
+
