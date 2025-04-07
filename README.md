@@ -130,7 +130,8 @@ nmap -p- 10.10.252.192
 
 </Details>
 
-# 2. What is the name of the malicious-looking package installed on the server?
+<div style="color: blue; font-size: 20px"><strong>🔵 2. What is the name of the malicious-looking package installed on the server?</strong></div>
+
 <Details>
 
 # Lets find the Malicious-Looking Package Installed on the Server
@@ -152,7 +153,8 @@ nmap -p- 10.10.252.192
 
 </Details>
 
-# 3. What is the name of the plugin installed on the server after successful exploitation?
+<div style="color: blue; font-size: 20px"><strong>🔵 3. What is the name of the plugin installed on the server after successful exploitation?</strong></div>
+
 <Details>
 
 # Identify the Plugin Installed After Exploitation
