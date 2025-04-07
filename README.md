@@ -5,8 +5,7 @@
 > 🚨 CVE used: CVE-2024-27198
 
 <span style="color: red; font-size: 20px"><strong>🔴 RED exploit the server!</strong></span>
-
-# 1. What is the content of flag.txt in the user's home folder?
+<span style="color: red; font-size: 20px"><strong>🔴  What is the content of flag.txt in the user's home folder?</strong></span>
 
 <Details>
       
@@ -31,7 +30,7 @@ nmap -p- 10.10.252.192
    nmap -sV -p 50000 10.10.252.192
    ```
    
-# 2. Second Step: What port should we investigate further + Using Metasploit (msfconsole) to Exploit the TeamCity Vulnerability
+## 2. Second Step: What port should we investigate further + Using Metasploit (msfconsole) to Exploit the TeamCity Vulnerability
    
    *The most interesting one here is Port 50000: even though it's labeled ibm-db2, we know now it runs TeamCity, which is vulnerable to authentication bypass and remote code execution (RCE).*
    ```bash
