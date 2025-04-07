@@ -44,6 +44,6 @@ use exploit/multi/http/jetbrains_teamcity_rce_cve_2024_27198
 options
 ```
 1. "options" -> This command shows you all the configurable parameters for the selected module
-![Nmap Scan](Brain%20Room%20Nmap%20scan.JPG)
+![Nmap Scan](Brain%20Room%20exploit%20run.JPG)
 
 
