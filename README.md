@@ -5,6 +5,7 @@
 > 🚨 CVE used: CVE-2024-27198
 
 # RED exploit the server!
+
 <Details>
 # 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
 
@@ -91,3 +92,8 @@ meterpreter > cat flag.txt
 THM{redacted_for_policy}
 ```
 </Details>
+
+# BLUE lets investigate!
+
+# 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
+
