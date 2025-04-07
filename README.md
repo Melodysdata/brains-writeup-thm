@@ -5,7 +5,7 @@
 > 🚨 CVE used: CVE-2024-27198
 
 # RED exploit the server! 
-# What is the content of flag.txt in the user's home folder?
+# 1. What is the content of flag.txt in the user's home folder?
 
 <Details>
 # 1. First Step: run in the Terminal "nmap -p- "<Target_IP_Address>"
@@ -95,7 +95,7 @@ THM{redacted_for_policy}
 </Details>
 
 # BLUE lets investigate!
-# What is the name of the backdoor user which was created on the server after exploitation?
+# 1. What is the name of the backdoor user which was created on the server after exploitation?
 <Details>
    
 # 1. First Step: Access the Web Application
@@ -106,3 +106,8 @@ THM{redacted_for_policy}
 1. "10.10.249.14" -> The target machine's IP address
 2. "8000" -> The port number
 
+# 2. Second Step:  Access Search & Reporting
+
+*In the left-hand panel, you can see a list of installed apps within Splunk; Click on Search & Reporting*
+
+![Nmap Scan](Brain%20Room%20flag.JPG)
