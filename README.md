@@ -111,3 +111,12 @@ THM{redacted_for_policy}
 *In the left-hand panel, you can see a list of installed apps within Splunk; Click on Search & Reporting*
 
 ![Nmap Scan](Brain%20Room%20Web%20search.JPG)
+
+# Search for the Backdoor User
+*Now that we are inside Search & Reporting, it's time to use Splunk’s powerful query system to investigate the logs and answer the first question*
+*We're going to search inside the authentication logs (auth.log) for entries related to the creation of new users.*
+
+```bash
+source="/var/log/auth.log" *new user* #Set Time Range to “All time”
+```
+![Nmap Scan](Brain%20Room%20Web%20search.JPG)
