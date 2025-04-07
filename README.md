@@ -48,4 +48,11 @@ options
    
 ![Nmap Scan](Brain%20Room%20exploit%20run.JPG)
 
+*We need to set the correct options before running the exploit.*
+```bash
+set RHOSTS 10.10.252.192     # Target IP address
+set RPORT 50000              # Target port where TeamCity is running
+```
+*
+
 
