@@ -5,7 +5,7 @@
 > 🚨 CVE used: CVE-2024-27198
 
 <span style="color: red; font-size: 20px"><strong>🔴 RED exploit the server!</strong></span>
-<span style="color: red; font-size: 20px"><strong>🔴  What is the content of flag.txt in the user's home folder?</strong></span>
+<div style="color: red; font-size: 20px"><strong>🔴  What is the content of flag.txt in the user's home folder?</strong></div>
 
 <Details>
       
