@@ -4,7 +4,7 @@
 > 🛡️ Goal: Gain reverse shell & capture the flag  
 > 🚨 CVE used: CVE-2024-27198
 
-# <span style="color: red"> RED exploit the server!</span>
+<span style="color: red">RED exploit the server!</span>
 # 1. What is the content of flag.txt in the user's home folder?
 
 <Details>
