@@ -6,7 +6,7 @@
 
 # 🔴 RED exploit the server!
 
-  <div style="color: red; font-size: 20px"><strong>🔴 1. What is the content of flag.txt in the user's home folder?</strong></div>
+<div style="color: red; font-size: 20px"><strong>🔴 1. What is the content of flag.txt in the user's home folder?</strong></div>
 
 <Details>
       
