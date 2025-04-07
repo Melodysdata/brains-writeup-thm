@@ -22,7 +22,8 @@ nmap -p- 10.10.252.192
 2. 80/tcp → HTTP (This is the default HTTP port, used to serve websites.)
 3. 50000/tcp → ibm-db2 (detected by default) This is not a common service for this port. In this specific room (Brains), this port is hosting a TeamCity server, vulnerable to CVE-2024-27198.
 
-#2. What port should we investigate further + Using Metasploit (msfconsole) to Exploit the TeamCity Vulnerability
+# 2. What port should we investigate further + Using Metasploit (msfconsole) to Exploit the TeamCity Vulnerability
+
 *The most interesting one here is Port 50000: even though it's labeled ibm-db2, it actually runs TeamCity, which is vulnerable to authentication bypass and remote code execution (RCE).*
 ```bash
 msfconsole
@@ -44,6 +45,7 @@ use exploit/multi/http/jetbrains_teamcity_rce_cve_2024_27198
 options
 ```
 1. "options" -> This command shows you all the configurable parameters for the selected module
+   
 ![Nmap Scan](Brain%20Room%20exploit%20run.JPG)
 
 
