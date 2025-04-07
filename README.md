@@ -5,6 +5,7 @@
 > 🚨 CVE used: CVE-2024-27198
 
 # 🔴 RED exploit the server!
+
 <div style="color: red; font-size: 20px"><strong>🔴  What is the content of flag.txt in the user's home folder?</strong></div>
 
 <Details>
@@ -95,8 +96,10 @@ nmap -p- 10.10.252.192
    ```
    </Details>
 
-# BLUE lets investigate!
-# 1. What is the name of the backdoor user which was created on the server after exploitation?
+# 🔵 BLUE lets investigate!
+
+<div style="color: blue; font-size: 20px"><strong>🔵 1. What is the name of the backdoor user which was created on the server after exploitation?</strong></div>
+
 <Details>
    
 # First Step: Access the Web Application
